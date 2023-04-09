@@ -49,6 +49,7 @@ import {} from 'vue'
   }
 
   .text {
+    padding: 0 .8rem;
     font-size: 12px;
     text-align: center;
   }
