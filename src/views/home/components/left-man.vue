@@ -50,7 +50,6 @@ import {} from 'vue'
 
   .text {
     font-size: 12px;
-    transform: scale(0.8);
     text-align: center;
   }
 }
