@@ -66,13 +66,14 @@ import {} from 'vue'
     }
 
     .three-title {
-      font-size: 16px;
+      padding-top: .16rem;
+      font-size: .128rem;
       font-weight: bold;
     }
 
     .sub-title {
       padding: .128rem 0 .064rem;
-      font-size: 14px;
+      font-size: .112rem;
       line-height: 1.8;
     }
 
