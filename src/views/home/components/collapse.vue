@@ -1,5 +1,5 @@
 <template>
-  <div class="view-pd home-collapse-container">
+  <!-- <div class="view-pd home-collapse-container">
     <p class="vtitle">FAQ</p>
     <div class="row-box">
       <p>
@@ -57,16 +57,40 @@
       </p>
       <span class="sign">+</span>
     </div>
+  </div> -->
+  <div class="view-pd home-collapse-container">
+    <ElCollapse v-model="activeNames">
+      <ElCollapseItem v-for="(item, index) in COLLAPSE_MAP" :key="`coll-${index}`" :title="item.title" :name="`${index}`">
+        <div style="font-size: 12px">{{item.value}}</div>
+      </ElCollapseItem>
+    </ElCollapse>
   </div>
 </template>
 
-<script>
-export default {}
+<script setup>
+import { ElCollapse, ElCollapseItem } from 'element-plus'
+import { COLLAPSE_MAP } from './const'
+import { ref } from 'vue'
+const activeNames = ref('')
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 .home-collapse-container {
   padding-top: 100px;
+
+  .el-collapse-item__header {
+    color: #fff;
+    background-color: transparent;
+  }
+
+  .el-collapse-item__wrap {
+    background-color: transparent;
+  }
+
+  .el-collapse-item__content {
+    color: #fff;
+  }
+
   .vtitle {
     padding-bottom: .16rem;
     font-size: 0.44rem;
