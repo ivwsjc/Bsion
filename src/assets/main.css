@@ -5,6 +5,10 @@ div, p {
   box-sizing: border-box;
 }
 
+img {
+  display: block;
+}
+
 @media only screen and (max-width: 750px) {
   .view-pd {
     padding: 0 0.48rem;

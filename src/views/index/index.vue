@@ -13,6 +13,7 @@ import Footer from './components/footer.vue'
 
 <style lang="scss">
 .index-container {
+  padding-bottom: 60px;
   height: 100vh;
   overflow-y: auto;
   background-color: #000;

@@ -100,7 +100,6 @@ const activeNames = ref('')
 
   .footer-down {
     padding-top: 1.28rem;
-    padding-bottom: 60px;
     display: flex;
     flex-direction: column;
     align-items: center;

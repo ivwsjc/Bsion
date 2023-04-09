@@ -65,12 +65,8 @@ export default {}
 </script>
 
 <style lang="scss" scoped>
-@media only screen and (max-width: 750px) {
-  .home-collapse-container {
-    display: none;
-  }
-}
 .home-collapse-container {
+  padding-top: 100px;
   .vtitle {
     padding-bottom: .16rem;
     font-size: 0.44rem;

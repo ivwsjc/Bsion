@@ -57,6 +57,8 @@ import {} from 'vue'
 
 <style lang="scss">
 .home-bank {
+  padding-top: 80px;
+
   .big-box {
     display: flex;
     align-items: center;
