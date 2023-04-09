@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" id="html-id" class="dark">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+    <title>Vite App</title>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script type="module" src="/src/main.js"></script>
+    <script>
+      window.onload = () => {
+        const handler = () => {
+          // 750宽度是移动端设计基础值
+          let width = 750
+          const innerWidth = window.innerWidth
+
+          // 1024 是大屏幕基础值
+          if (innerWidth > 750) {
+            width = 1024
+          }
+          const size = innerWidth / width * 100
+          const el = document.getElementById('html-id')
+          el.style.fontSize = `${size}px`
+        }
+        handler()
+        window.onresize = () => {
+          handler()
+        }
+      }
+    </script>
+  </body>
+</html>
