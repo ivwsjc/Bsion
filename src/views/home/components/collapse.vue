@@ -1,67 +1,8 @@
 <template>
-  <!-- <div class="view-pd home-collapse-container">
-    <p class="vtitle">FAQ</p>
-    <div class="row-box">
-      <p>
-        <span class="label">1</span>
-        Who is Bison bank?
-      </p>
-      <span style="color: #EFA25F;" class="sign">+</span>
-    </div>
-    <div class="row-box">
-      <p>
-        <span class="label">2</span>
-         Why choose Bison Premier Banking?
-      </p>
-      <span class="sign">+</span>
-    </div>
-    <div class="row-box">
-      <p>
-        <span class="label">3</span>
-         Why is now the best time to join Bison Premier Banking?
-      </p>
-      <span class="sign">+</span>
-    </div>
-    <div class="row-box">
-      <p>
-        <span class="label">4</span>
-         How can I ensure that my funds are secure with Bison Bank? 
-      </p>
-      <span class="sign">+</span>
-    </div>
-    <div class="row-box">
-      <p>
-        <span class="label">5</span>
-         How can I ensure the privacy of my account? 
-      </p>
-      <span class="sign">+</span>
-    </div>
-    <div class="row-box">
-      <p>
-        <span class="label">6</span>
-         What are the benefits of a Bison Premier Banking account?
-      </p>
-      <span class="sign">+</span>
-    </div>
-    <div class="row-box">
-      <p>
-        <span class="label">7</span>
-         What are the fees for Bison Premier Banking? 
-      </p>
-      <span class="sign">+</span>
-    </div>
-    <div class="row-box">
-      <p>
-        <span class="label">8</span>
-         How do I join Bison Premier Banking? 
-      </p>
-      <span class="sign">+</span>
-    </div>
-  </div> -->
   <div class="view-pd home-collapse-container">
     <ElCollapse v-model="activeNames">
-      <ElCollapseItem v-for="(item, index) in COLLAPSE_MAP" :key="`coll-${index}`" :title="item.title" :name="`${index}`">
-        <div style="font-size: 12px">{{item.value}}</div>
+      <ElCollapseItem v-for="item in 8" :key="`coll-${item}`" :title="$t(`collapse.title${item}`)" :name="`${item}`">
+        <div style="font-size: 14px; line-height: 1.3;" v-html="$t(`collapse.text${item}`)"></div>
       </ElCollapseItem>
     </ElCollapse>
   </div>
@@ -69,7 +10,6 @@
 
 <script setup>
 import { ElCollapse, ElCollapseItem } from 'element-plus'
-import { COLLAPSE_MAP } from './const'
 import { ref } from 'vue'
 const activeNames = ref('')
 </script>
