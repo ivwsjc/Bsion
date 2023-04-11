@@ -1,10 +1,10 @@
 <template>
   <div class="bank-title-container">
     <div class="bank-title-box">
-      <div class="title">Bison Crypto Card</div>
-      <p class="text">The Bison Crypto Visa Card is coming soon and is currently only available for free to Bison Premier Banking users, enjoying</p>
-      <p class="text">the global Visa payment and settlement network, real-time exchange for multiple currencies such as cryptocurrencies,</p>
-      <p class="text">euros, US dollars, and Chinese yuan, bringing cryptocurrencies into everyday life.</p>
+      <div class="title">{{$t('bankTitle.title')}}</div>
+      <p class="text">{{$t('bankTitle.text1')}}</p>
+      <p class="text">{{$t('bankTitle.text2')}}</p>
+      <p class="text">{{$t('bankTitle.text3')}}</p>
       <img src="@/assets/images/p11.png" alt="">
     </div>
   </div>
@@ -22,7 +22,6 @@ import {} from 'vue'
 }
 .bank-title-container {
   padding-top: .8rem;
-  padding-left: 1.2rem;
   .bank-title-box {
     display: flex;
     flex-direction: column;
@@ -40,8 +39,7 @@ import {} from 'vue'
 
   .text {
     font-size: 12px;
-    opacity: 0.9;
-    transform: scale(0.8);
+    line-height: 1.3;
   }
 
   img {

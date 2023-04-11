@@ -1,8 +1,8 @@
 <template>
   <div class="home-cover-title">
     <p class="title">{{$t('coverTitle.title')}}</p>
-    <p class="sub-title"> We attach great importance to user privacy and protection, strictly comply with relevant laws and</p>
-    <p class="sub-title">industry standards, and ensure the security of customer personal information and assets.</p>
+    <p class="sub-title">{{$t('coverTitle.subTitle1')}}</p>
+    <p class="sub-title" v-if="$t('coverTitle.subTitle2')">{{$t('coverTitle.subTitle2')}}</p>
     <img
       src="@/assets/images/p13.png"
       alt=""
