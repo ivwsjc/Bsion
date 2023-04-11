@@ -11,20 +11,16 @@
         <p>Sevice</p>
         <p>Contact</p>
       </div>
-      <el-dropdown trigger="click">
-        <img
-          class="index-language"
-          src="@/assets/images/p1.png"
-          alt=""
-        >
+      <ElDropdown trigger="click" @command="onCommand">
+        <p class="language">{{$t('language')}}</p>
         <template #dropdown>
           <ElDropdownMenu>
-            <ElDropdownItem>中文</ElDropdownItem>
-            <ElDropdownItem>英文</ElDropdownItem>
-            <ElDropdownItem>葡萄牙文</ElDropdownItem>
+            <ElDropdownItem command="zh-cn">中文</ElDropdownItem>
+            <ElDropdownItem command="en">English</ElDropdownItem>
+            <ElDropdownItem command="po">Portuguese</ElDropdownItem>
           </ElDropdownMenu>
         </template>
-      </el-dropdown>
+      </ElDropdown>
     </div>
   </header>
 
@@ -44,11 +40,18 @@
 </template>
 
 <script setup>
-import { ElDropdown, ElDropdownMenu, ElDropdownItem } from 'element-plus'
 import { ref } from 'vue'
+import { ElDropdown, ElDropdownMenu, ElDropdownItem } from 'element-plus'
+import { useI18n } from 'vue-i18n'
 
+const { locale } = useI18n()
 const top = ref(-132)
 const bgColor = ref('transparent')
+
+// 切换语言
+const onCommand = (value) => {
+  locale.value = value
+}
 
 const onMenuVisible = () => {
   if (top.value === 0) {
@@ -100,6 +103,13 @@ const onMenuVisible = () => {
     font-weight: bold;
     color: #fff;
   }
+}
+
+.language {
+  font-size: 0.112rem;
+  font-weight: bold;
+  color: #fff;
+  cursor: pointer;
 }
 
 .h5-index-header {

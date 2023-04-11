@@ -8,21 +8,20 @@
           alt=""
         >
         <div class="right">
-          <p class="title">Bison Premier Banking: </p>
-          <p class="title">Where Crypto Wealth and Discretion</p>
-          <p class="title">Meet</p>
-          <img
-            class="join-image"
-            src="@/assets/images/p2.png"
-            alt=""
-          >
-          <p class="title2">Enjoy a Secure, Private Global Account, ECB-Protected Crypto</p>
-          <p class="title2">Assets, with Waived Annual and Card Fees during the Trial Period</p>
+          <p class="title">{{$t('bank.title')}}</p>
+          <div class="subTitle-box">
+            <p class="subTitle">{{$t('bank.subTitle')}}</p>
+            <p class="subTitle">{{$t('bank.subTitle1')}}</p>
+          </div>
+          <p class="threeTitle">{{$t('bank.threeTitle')}}</p>
+          <p class="threeTitle">{{$t('bank.threeTitle1')}}</p>
           <p
-            style="padding-top: .64rem;"
-            class="title3"
-          >Selecting 100 Crypto Elites, </p>
-          <p class="title3">Elevate Your Dignified Crypto Lifestyle</p>
+            class="threeTitle"
+            v-if="$t('bank.threeTitle2')"
+          >{{$t('bank.threeTitle2')}}</p>
+          <div class="join-btn">
+            <div class="btn">{{$t('bank.btnText')}}</div>
+          </div>
         </div>
       </div>
     </div>
@@ -37,7 +36,10 @@
           alt=""
         >
         <p class="title2">Selecting 100 Crypto Elites, </p>
-        <p style="padding-top: .2rem;" class="title2">Elevate Your Dignified Crypto Lifestyle</p>
+        <p
+          style="padding-top: .2rem;"
+          class="title2"
+        >Elevate Your Dignified Crypto Lifestyle</p>
         <img
           class="join-image"
           src="@/assets/images/p2.png"
@@ -64,8 +66,8 @@ import {} from 'vue'
     align-items: center;
 
     .bank-image {
-      width: 4.568rem;
-      height: 5.08rem;
+      width: 3.52rem;
+      height: 4.032rem;
     }
 
     .right {
@@ -85,23 +87,49 @@ import {} from 'vue'
       }
     }
 
-    .join-image {
-      margin-top: 0.8rem;
-      margin-bottom: 0.16rem;
+    .join-btn {
+      margin-top: .32rem;
       width: 2.384rem;
-      height: 0.624rem;
+      height: .544rem;
+      font-size: 0.176rem;
+      border: 1px solid transparent;
+      border-radius: 0.08rem;
+      background-clip: padding-box, border-box;
+      background-origin: padding-box, border-box;
+      background-image: linear-gradient(to right, #000, #000),
+        linear-gradient(to right, #fdc830, #f37335);
+
+      .btn {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: transparent;
+        background-clip: text;
+        -webkit-background-clip: text;
+        background-image: linear-gradient(to right, #fdc830, #f37335);
+      }
     }
 
-    .title2 {
-      font-size: 0.112rem;
-      color: #999;
-      line-height: 1.5;
+    .subTitle-box {
+      padding: .56rem 0 .24rem;
+      p {
+        text-align: center;
+        &:nth-child(1) {
+          padding-bottom: 10px;
+        }
+      }
     }
 
-    .title3 {
-      padding-top: 0.16rem;
+    .subTitle {
       font-size: 0.128rem;
       color: #d3d3d3;
+    }
+
+    .threeTitle {
+      font-size: 12px;
+      color: #999;
+      line-height: 1.2;
     }
   }
   .big-box-show {
@@ -114,7 +142,7 @@ import {} from 'vue'
     align-items: center;
 
     .title {
-      padding-top: .2rem;
+      padding-top: 0.2rem;
       font-size: 14px;
       font-weight: bold;
 
@@ -124,22 +152,22 @@ import {} from 'vue'
     }
 
     .bank-image {
-      margin-top: .4rem;
+      margin-top: 0.4rem;
       width: 6.06rem;
       height: 6.66rem;
     }
 
     .title2 {
-      padding-top: .4rem;
-      font-size: .28rem;
+      padding-top: 0.4rem;
+      font-size: 0.28rem;
       color: #d3d3d3;
     }
 
     .join-image {
-      margin-top: .8rem;
+      margin-top: 0.8rem;
       margin-bottom: 0.16rem;
       width: 2.84rem;
-      height: .74rem;
+      height: 0.74rem;
     }
 
     .title3 {

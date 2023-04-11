@@ -1,25 +1,25 @@
 <template>
   <div class="view-pd three-container">
-    <p class="title">A uniquely elevated private banking experience</p>
-    <p class="title">shaped around you</p>
+    <p class="title">{{$t('threeBox.title')}}</p>
+    <p class="title" v-if="$t('threeBox.title1')">{{$t('threeBox.title1')}}</p>
     <div class="three-value">
       <div class="three-box">
         <img src="@/assets/images/p7.png" alt="">
-        <p class="three-title">SAFE</p>
-        <p class="sub-title">Cryptocurrencies Protected by  the European Central Bank</p>
-        <p class="text">Private bank accounts are protected by the European Deposit Insurance Scheme introduced by the European Union, providing up to €100,000 deposit insurance.Bison Bank is subject to strict supervision from the Portuguese Central Bank and the European Central Bank, complying with anti-money laundering and counter-terrorist financing regulations to protect the safety of client assets. </p>
+        <p class="three-title">{{$t('threeBox.threeTitle1')}}</p>
+        <p class="sub-title">{{$t('threeBox.subTitle1')}}</p>
+        <p class="text">{{$t('threeBox.text1')}}</p>
       </div>
       <div class="three-box">
         <img src="@/assets/images/p8.png" alt="">
-        <p class="three-title">GLOBAL</p>
-        <p class="sub-title">Global asset allocation </p>
-        <p class="text"> Private banking clients can use cryptocurrencies as underlying assets for global asset allocation, purchase global private banking wealth management products, and provide one-stop asset custody and configuration solutions for new cryptocurrency investors. For any customized needs, please contact us.</p>
+        <p class="three-title">{{$t('threeBox.threeTitle2')}}</p>
+        <p class="sub-title">{{$t('threeBox.subTitle2')}}</p>
+        <p class="text">{{$t('threeBox.text2')}}</p>
       </div>
       <div class="three-box">
         <img src="@/assets/images/p6.png" alt="">
-        <p class="three-title">TRANSPARENT</p>
-        <p class="sub-title"> Fully transparent asset    disclosure</p>
-        <p class="text"> The European Central Bank requires private banks to disclose financial and risk conditions to the public on a regular basis. Anyone can inquire about related information on the Bison bank official website to understand the bank's operations.</p>
+        <p class="three-title">{{$t('threeBox.threeTitle3')}}</p>
+        <p class="sub-title">{{$t('threeBox.subTitle3')}}</p>
+        <p class="text">{{$t('threeBox.text3')}}</p>
       </div>
     </div>
   </div>

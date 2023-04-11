@@ -1,6 +1,6 @@
 <template>
   <div class="home-cover-title">
-    <p class="title">Customer privacy protection</p>
+    <p class="title">{{$t('coverTitle.title')}}</p>
     <p class="sub-title"> We attach great importance to user privacy and protection, strictly comply with relevant laws and</p>
     <p class="sub-title">industry standards, and ensure the security of customer personal information and assets.</p>
     <img
