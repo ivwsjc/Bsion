@@ -55,12 +55,12 @@ import {} from 'vue'
 
   .title {
     padding-bottom: .24rem;
-    font-size: .144rem;
+    font-size: .16rem;
     text-align: center;
   }
 
   .text {
-    font-size: 14px;
+    font-size: .112rem;
     text-align: center;
     line-height: 1.3;
   }

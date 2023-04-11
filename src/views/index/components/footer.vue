@@ -1,4 +1,7 @@
 <template>
+  <div class="footer-join-box">
+    <JoinBtn />
+  </div>
   <footer class="view-pd index-footer-container">
     <div class="footer-up">
       <div class="footer-left">
@@ -13,24 +16,17 @@
           >{{subItem}}</p>
         </div>
       </div>
-      <div class="footer-right">
+      <!-- <div class="footer-right">
         <img
           src="@/assets/images/p2.png"
           alt=""
         >
         <p>Enjoy a Secure, Private Global Account, ECB-Protected Crypto Assets, with Waived Annual and Card Fees during the Trial Period</p>
-      </div>
+      </div> -->
     </div>
   </footer>
 
   <footer class="view-pd h5-index-footer-container">
-    <div class="footer-up">
-      <img
-        src="@/assets/images/p2.png"
-        alt=""
-      >
-      <p>Enjoy a Secure, Private Global Account, ECB-Protected Crypto Assets, with Waived Annual and Card Fees during the Trial Period</p>
-    </div>
     <div class="footer-text">
       <template
         v-for="(item, index) in footerList"
@@ -84,35 +80,42 @@
 </template>
 
 <script setup>
+import JoinBtn from '@/components/join-btn.vue'
 import footerList from './const'
 import { ref } from 'vue'
 const activeNames = ref('')
 </script>
 
 <style lang="scss">
+.footer-join-box {
+  padding: .8rem 0;
+  display: flex;
+  justify-content: center;
+}
+
 .index-footer-container {
-  padding-top: 1.6rem;
   color: #fff;
 
   .footer-up {
     display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
   }
 
   .footer-left {
     display: flex;
-    flex: 1;
+    width: 100%;
 
     .column {
-      flex: 1;
+      padding: 0 0.48rem;
+      width: 25%;
     }
 
     p {
-      padding: 0 20px 20px 0;
-      max-width: 200px;
+      padding-bottom: 20px;
       opacity: 0.8;
       font-size: 14px;
+      text-align: center;
 
       &:nth-child(1) {
         font-weight: bold;
@@ -142,8 +145,6 @@ const activeNames = ref('')
 }
 
 .h5-index-footer-container {
-  padding-top: 1.2rem;
-
   .footer-up {
     display: flex;
     flex-direction: column;
@@ -164,7 +165,6 @@ const activeNames = ref('')
   }
 
   .footer-text {
-    padding-top: 1.2rem;
     display: flex;
 
     .column {
@@ -187,7 +187,7 @@ const activeNames = ref('')
 }
 
 .footer-down-code {
-  padding-top: .32rem;
+  padding-top: 0.32rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -198,7 +198,7 @@ const activeNames = ref('')
   }
 
   .logo {
-    margin-top: .16rem;
+    margin-top: 0.16rem;
     width: 2.192rem;
     height: 0.664rem;
   }
@@ -211,21 +211,25 @@ const activeNames = ref('')
 }
 
 @media only screen and (max-width: 750px) {
+  .footer-join-box  {
+    padding: 2rem 0;
+  }
+
   .index-footer-container {
     display: none;
   }
 
   .footer-down-code {
-    padding-top: .4rem;
+    padding-top: 0.4rem;
 
     .qrcode {
       width: 1.68rem;
       height: 1.64rem;
     }
     .logo {
-      margin-top: .4rem;
+      margin-top: 0.4rem;
       width: 3.14rem;
-      height: .96rem;
+      height: 0.96rem;
     }
   }
 }

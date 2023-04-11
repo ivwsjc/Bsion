@@ -38,8 +38,10 @@ import {} from 'vue'
   }
 
   .text {
+    width: 70%;
     font-size: 12px;
     line-height: 1.3;
+    text-align: center;
   }
 
   img {

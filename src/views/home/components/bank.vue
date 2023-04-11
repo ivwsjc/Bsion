@@ -20,7 +20,7 @@
             v-if="$t('bank.threeTitle2')"
           >{{$t('bank.threeTitle2')}}</p>
           <div class="join-btn">
-            <div class="btn">{{$t('bank.btnText')}}</div>
+            <JoinBtn />
           </div>
         </div>
       </div>
@@ -54,6 +54,7 @@
 </template>
 
 <script setup>
+import JoinBtn from '@/components/join-btn.vue'
 import {} from 'vue'
 </script>
 
@@ -89,26 +90,6 @@ import {} from 'vue'
 
     .join-btn {
       margin-top: .32rem;
-      width: 2.384rem;
-      height: .544rem;
-      font-size: 0.176rem;
-      border: 1px solid transparent;
-      border-radius: 0.08rem;
-      background-clip: padding-box, border-box;
-      background-origin: padding-box, border-box;
-      background-image: linear-gradient(to right, #000, #000),
-        linear-gradient(to right, #fdc830, #f37335);
-
-      .btn {
-        height: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: transparent;
-        background-clip: text;
-        -webkit-background-clip: text;
-        background-image: linear-gradient(to right, #fdc830, #f37335);
-      }
     }
 
     .subTitle-box {

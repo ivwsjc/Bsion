@@ -28,7 +28,9 @@ import {} from 'vue'
 
   .sub-title {
     padding-top: 0.16rem;
+    width: 70%;
     font-size: 0.096rem;
+    text-align: center;
 
     &:nth-child(3) {
       padding-top: 2px;
