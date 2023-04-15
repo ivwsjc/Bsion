@@ -83,10 +83,6 @@ import {} from 'vue'
       }
     }
 
-    .big-box-show .join-btn-box {
-      margin-top: 0.32rem;
-    }
-
     .subTitle-box {
       padding: 0.56rem 0 0.24rem;
       p {
@@ -106,6 +102,10 @@ import {} from 'vue'
       font-size: 12px;
       color: #999;
       line-height: 1.2;
+    }
+
+    .join-btn-box {
+      margin-top: 0.32rem;
     }
   }
   .big-box-show {
