@@ -34,9 +34,9 @@ import {} from 'vue'
 
 @media only screen and (max-width: 750px) {
   .join-btn {
-    width: 5.96rem;
-    height: 1.36rem;
-    font-size: 0.44rem;
+    width: 3.04rem;
+    height: .74rem;
+    font-size: .24rem;
     border-radius: 0.2rem;
   }
 }

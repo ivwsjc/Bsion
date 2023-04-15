@@ -19,7 +19,7 @@
             class="threeTitle"
             v-if="$t('bank.threeTitle2')"
           >{{$t('bank.threeTitle2')}}</p>
-          <div class="join-btn">
+          <div class="join-btn-box">
             <JoinBtn />
           </div>
         </div>
@@ -28,26 +28,21 @@
 
     <div class="small-box-show">
       <div class="small-box">
-        <p class="title">Bison Premier Banking: </p>
-        <p class="title">Where Crypto Wealth and Discretion Meet</p>
+        <p class="title">{{$t('bank.title')}}</p>
         <img
           class="bank-image"
           src="@/assets/images/p10.png"
           alt=""
         >
-        <p class="title2">Selecting 100 Crypto Elites, </p>
+        <p class="title2">{{$t('bank.subTitle')}}</p>
         <p
           style="padding-top: .2rem;"
           class="title2"
-        >Elevate Your Dignified Crypto Lifestyle</p>
-        <img
-          class="join-image"
-          src="@/assets/images/p2.png"
-          alt=""
-        >
-        <p class="title3">Enjoy a Secure, Private Global Account, </p>
-        <p class="title3">ECB-Protected Crypto Assets, with Waived </p>
-        <p class="title3">Annual and Card Fees during the Trial Period</p>
+        >{{$t('bank.subTitle1')}}</p>
+        <p class="title3">{{$t('bank.threeTitle')}}{{$t('bank.threeTitle1')}}{{$t('bank.threeTitle2') ? $t('bank.threeTitle2') : ''}}</p>
+        <div class="join-btn-box">
+          <JoinBtn />
+        </div>
       </div>
     </div>
   </div>
@@ -58,7 +53,7 @@ import JoinBtn from '@/components/join-btn.vue'
 import {} from 'vue'
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .home-bank {
   padding-top: 80px;
 
@@ -88,12 +83,12 @@ import {} from 'vue'
       }
     }
 
-    .join-btn {
-      margin-top: .32rem;
+    .big-box-show .join-btn-box {
+      margin-top: 0.32rem;
     }
 
     .subTitle-box {
-      padding: .56rem 0 .24rem;
+      padding: 0.56rem 0 0.24rem;
       p {
         text-align: center;
         &:nth-child(1) {
@@ -144,18 +139,17 @@ import {} from 'vue'
       color: #d3d3d3;
     }
 
-    .join-image {
-      margin-top: 0.8rem;
-      margin-bottom: 0.16rem;
-      width: 2.84rem;
-      height: 0.74rem;
-    }
-
     .title3 {
+      padding-top: 0.4rem;
       font-size: 12px;
       color: #999;
       white-space: normal;
       line-height: 1.3;
+      text-align: center;
+    }
+
+    .join-btn-box {
+      margin-top: 0.4rem;
     }
   }
 

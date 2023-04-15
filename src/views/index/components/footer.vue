@@ -16,13 +16,6 @@
           >{{subItem}}</p>
         </div>
       </div>
-      <!-- <div class="footer-right">
-        <img
-          src="@/assets/images/p2.png"
-          alt=""
-        >
-        <p>Enjoy a Secure, Private Global Account, ECB-Protected Crypto Assets, with Waived Annual and Card Fees during the Trial Period</p>
-      </div> -->
     </div>
   </footer>
 
@@ -88,7 +81,7 @@ const activeNames = ref('')
 
 <style lang="scss">
 .footer-join-box {
-  padding: .8rem 0;
+  padding: 0.8rem 0;
   display: flex;
   justify-content: center;
 }
@@ -211,7 +204,7 @@ const activeNames = ref('')
 }
 
 @media only screen and (max-width: 750px) {
-  .footer-join-box  {
+  .footer-join-box {
     padding: 2rem 0;
   }
 

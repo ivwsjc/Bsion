@@ -59,5 +59,33 @@ export default {
     text6: 'Clients who open a Bison Premier Banking private bank account can enjoy our services such as cryptocurrency asset custody, fiat currency acceptance, global asset allocation, and Visa debit card. The benefits of this private bank account are not limited to the cryptocurrency field and include all the benefits of traditional private bank accounts. We will continue to upgrade our product structure to ensure the provision of higher-quality services. If you have any customized requirements, you can contact our advisors, and we will be happy to serve you (redirect link).',
     text7: 'Bison Premier Banking adheres to the principle of transparency and will disclose account fees immediately. The current fees include a fiat currency conversion fee of 1.5%, an identity verification service fee of XXX US dollars, no annual fee (the first deposit must be equal to or greater than 100,000 euros, if the daily average balance of crypto assets in the account is less than 100,000 euros, an account management annual fee of XXX US dollars will be charged), no card issuance fee, and no additional hidden fees. Fees incurred during ATM withdrawals and international transfers are charged by thechannel partners. Fees incurred during asset custody, private banking wealth management products, and other processes will be charged according to the regulations of Bison Bank or counterparty banks. For personalized customization requests, please contact your advisor.',
     text8: "After fully understanding Bison Premier Banking, you can apply to join our waiting list on the website's homepage. We will select 100 applicants as the first batch of clients to join Bison Premier Banking. Once the basic capital threshold is met, your selection depends more on your personal values and cognitive orientation. You are free to refuse to answer any questions raised in the application form, as this is a mutual screening process."
+  },
+  gold: {
+    title: 'Cryptocurrencies Protected by the European Central Bank',
+    text: 'Bison Bank is subject to strict supervision from the Portuguese Central Bank and the European Central Bank, complying with anti-money laundering and counter-terrorist financing regulations to protect the safety of client assets. Private bank accounts are protected by the European Deposit Insurance Scheme introduced by the European Union, providing up to €100,000 deposit insurance.'
+  },
+  usb: {
+    title: 'Linking cryptocurrencies with fiat assets',
+    text: 'Building a bridge between cryptocurrencies and fiat assets, enjoying global banking services, and facilitating secure, compliant, transparent pricing with no hidden fees for USDT, euros, US dollars, British pounds, and Chinese yuan worldwide settlements. insurance.'
+  },
+  girl: {
+    title: 'Customer privacy protection',
+    text: 'We attach great importance to user privacy and protection, strictly comply with relevant laws and industry standards, and ensure the security of customer personal information and assets.'
+  },
+  leftMan: {
+    title: 'Fully transparent asset disclosure',
+    text: "The European Central Bank requires private banks to disclose financial and risk conditions to the public on a regular basis. Anyone can inquire about related information on the Bison bank official website to understand the bank's operations."
+  },
+  rightMan: {
+    title: 'Global asset allocation',
+    text: 'Private banking clients can use cryptocurrencies as underlying assets for global asset allocation, purchase global private banking wealth management products, and provide one-stop asset custody and configuration solutions for new cryptocurrency investors. For any customized needs, please contact us.'
+  },
+  leftTeam: {
+    title: 'The necessary threshold for becoming a qualified investor',
+    text: 'The threshold for becoming a private banking client is only €100,000 worth of cryptocurrency assets and necessary personal identity information. Lawyers will assist you in handling related compliance matters. Currently, only 100 clients are accepted.'
+  },
+  hand: {
+    title: 'Bison Crypto Card',
+    text: 'The Bison Crypto Visa Card is coming soon and is currently only available for free to Bison Premier Banking users, enjoying the global Visa payment and settlement network, real-time exchange for multiple currencies such as cryptocurrencies, euros, US dollars, and Chinese yuan, bringing cryptocurrencies into everyday life.'
   }
 }

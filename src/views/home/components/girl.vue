@@ -1,12 +1,12 @@
 <template>
   <div class="home-girl-container">
     <div class="home-girl-box">
-      <p class="title">Customer privacy protection</p>
+      <p class="title">{{$t('girl.title')}}</p>
       <img
         src="@/assets/images/p13.png"
         alt=""
       >
-      <p class="text">We attach great importance to user privacy and protection, strictly comply with relevant laws and industry standards, and ensure the security of customer personal information and assets.</p>
+      <p class="text">{{$t('girl.text')}}</p>
     </div>
   </div>
 </template>
@@ -25,7 +25,10 @@ import {} from 'vue'
     align-items: center;
   }
   .title {
-    font-size: 14px;
+    width: 70%;
+    font-size: 0.28rem;
+    text-align: center;
+    line-height: 1.6;
     background-image: linear-gradient(60deg, #fdc730, #f37335);
     color: transparent;
     background-clip: text;
@@ -40,10 +43,10 @@ import {} from 'vue'
   }
 
   .text {
-    font-size: 12px;
-    opacity: 0.8;
-    transform: scale(0.8);
+    width: 70%;
+    font-size: 0.24rem;
     text-align: center;
+    line-height: 1.4;
   }
 }
 

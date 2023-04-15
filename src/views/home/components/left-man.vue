@@ -1,7 +1,7 @@
 <template>
   <div class="home-left-man-container">
     <div class="home-left-man-box">
-      <p class="title">Fully transparent asset disclosure</p>
+      <p class="title">{{$t('leftMan.title')}}</p>
       <img
         src="@/assets/images/p16.png"
         alt=""
@@ -10,7 +10,7 @@
         class="link"
         href="https://www.bisonbank.com/"
       >https://www.bisonbank.com/</a>
-      <p class="text"> The European Central Bank requires private banks to disclose financial and risk conditions to the public on a regular basis. Anyone can inquire about related information on the Bison bank official website to understand the bank's operations.</p>
+      <p class="text">{{$t('leftMan.text')}}</p>
     </div>
   </div>
 </template>
@@ -24,7 +24,8 @@ import {} from 'vue'
   padding-top: 1.2rem;
   display: none;
   .title {
-    font-size: 14px;
+    font-size: 0.28rem;
+    line-height: 1.6;
     background-image: linear-gradient(60deg, #fdc730, #f37335);
     color: transparent;
     background-clip: text;
@@ -40,7 +41,7 @@ import {} from 'vue'
   }
 
   .link {
-    padding: 0.8rem 0 .24rem;
+    padding: 0.8rem 0 0.24rem;
     display: block;
     font-size: 12px;
     color: #f37335;
@@ -49,9 +50,10 @@ import {} from 'vue'
   }
 
   .text {
-    padding: 0 .8rem;
+    padding: 0 15%;
     font-size: 12px;
     text-align: center;
+    line-height: 1.4;
   }
 }
 @media only screen and (max-width: 750px) {

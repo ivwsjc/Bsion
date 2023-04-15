@@ -1,12 +1,12 @@
 <template>
   <div class="home-usb-container">
     <div class="home-usb-box">
-      <p class="title"> Linking cryptocurrencies with fiat assets</p>
+      <p class="title">{{$t('usb.title')}}</p>
       <img
         src="@/assets/images/p14.png"
         alt=""
       >
-      <p class="text">Building a bridge between cryptocurrencies and fiat assets, enjoying global banking services, and facilitating secure, compliant, transparent pricing with no hidden fees for USDT, euros, US dollars, British pounds, and Chinese yuan worldwide settlements. insurance.</p>
+      <p class="text">{{$t('usb.text')}}</p>
     </div>
   </div>
 </template>
@@ -27,7 +27,10 @@ import {} from 'vue'
   }
 
   .title {
-    font-size: 14px;
+    width: 80%;
+    font-size: 0.28rem;
+    text-align: center;
+    line-height: 1.6;
     background-image: linear-gradient(60deg, #fdc730, #f37335);
     color: transparent;
     background-clip: text;
@@ -42,10 +45,10 @@ import {} from 'vue'
   }
 
   .text {
+    width: 70%;
     font-size: 12px;
-    opacity: 0.8;
-    transform: scale(0.8);
     text-align: center;
+    line-height: 1.4;
   }
 }
 

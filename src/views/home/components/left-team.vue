@@ -1,15 +1,11 @@
 <template>
   <div class="home-left-team-container">
-    <p class="title">The necessary threshold for becoming</p>
-    <p
-      style="padding-top: .16rem;"
-      class="title"
-    >a qualified investor</p>
+    <p class="title">{{$t('leftTeam.title')}}</p>
     <img
       src="@/assets/images/p18.png"
       alt=""
     >
-    <p class="text">The threshold for becoming a private banking client is only €100,000 worth of cryptocurrency assets and necessary personal identity information. Lawyers will assist you in handling related compliance matters. Currently, only 100 clients are accepted.</p>
+    <p class="text">{{$t('leftTeam.text')}}</p>
   </div>
 </template>
 
@@ -21,15 +17,17 @@ import {} from 'vue'
 .home-left-team-container {
   padding-top: 1.2rem;
   display: none;
-  
+
   .title {
-    font-size: 14px;
+    padding: 0 15%;
+    font-size: 0.28rem;
     background-image: linear-gradient(60deg, #fdc730, #f37335);
     color: transparent;
     background-clip: text;
     -webkit-background-clip: text;
     font-weight: bold;
     text-align: center;
+    line-height: 1.6;
   }
 
   img {
@@ -39,10 +37,10 @@ import {} from 'vue'
   }
 
   .text {
-    padding: 0 .8rem;
+    padding: 0 15%;
     font-size: 12px;
     text-align: center;
-    line-height: 1.2;
+    line-height: 1.4;
   }
 }
 

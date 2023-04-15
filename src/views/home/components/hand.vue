@@ -1,12 +1,12 @@
 <template>
   <div class="home-hand-container">
     <div class="home-hand-box">
-      <p class="title">Bison Crypto Card</p>
+      <p class="title">{{$t('hand.title')}}</p>
       <img
         src="@/assets/images/p11.png"
         alt=""
       >
-      <p class="text"> The Bison Crypto Visa Card is coming soon and is currently only available for free to Bison Premier Banking users, enjoying the global Visa payment and settlement network, real-time exchange for multiple currencies such as cryptocurrencies, euros, US dollars, and Chinese yuan, bringing cryptocurrencies into everyday life.</p>
+      <p class="text">{{$t('hand.text')}}</p>
     </div>
   </div>
 </template>
@@ -27,7 +27,7 @@ import {} from 'vue'
   }
 
   .title {
-    font-size: 14px;
+    font-size: 0.28rem;
     background-image: linear-gradient(60deg, #fdc730, #f37335);
     color: transparent;
     background-clip: text;
@@ -43,7 +43,7 @@ import {} from 'vue'
   }
 
   .text {
-    padding: 0 1.2rem;
+    width: 70%;
     font-size: 12px;
     text-align: center;
     line-height: 1.2;

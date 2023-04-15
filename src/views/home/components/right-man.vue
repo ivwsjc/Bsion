@@ -1,14 +1,14 @@
 <template>
   <div class="home-right-man-container">
     <div class="home-right-man-box">
-      <p class="title">Global asset allocation </p>
+      <p class="title">{{$t('rightMan.title')}}</p>
       <div class="img-box">
         <img
           src="@/assets/images/p17.png"
           alt=""
         >
       </div>
-      <p class="text"> Private banking clients can use cryptocurrencies as underlying assets for global asset allocation, purchase global private banking wealth management products, and provide one-stop asset custody and configuration solutions for new cryptocurrency investors. For any customized needs, please contact us.</p>
+      <p class="text">{{$t('rightMan.text')}}</p>
     </div>
   </div>
 </template>
@@ -21,7 +21,7 @@ import {} from 'vue'
 .home-right-man-container {
   padding-top: 1rem;
   display: none;
-  
+
   .title {
     font-size: 14px;
     background-image: linear-gradient(60deg, #fdc730, #f37335);
@@ -44,9 +44,10 @@ import {} from 'vue'
   }
 
   .text {
-    padding: 0 .4rem;
+    padding: 0 15%;
     font-size: 12px;
     text-align: center;
+    line-height: 1.4;
   }
 }
 
